@@ -23,12 +23,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-soft-off";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <0>;
-        };
     };
 
     combos {
