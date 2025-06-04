@@ -89,7 +89,7 @@
 &kp TAB         &kp Q               &kp W           &kp E           &kp R                         &kp T        &kp Y            &kp U             &kp I           &kp O           &kp P                  &kp DELETE
 &kp LEFT_ALT    &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F              &kp G        &kp H            &mt LEFT_SHIFT J  &mt LEFT_GUI K  &mt LEFT_ALT L  &mt LEFT_CONTROL SEMI  &kp RET
 &kp LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp V                         &kp B        &kp N            &kp M             &kp COMMA       &kp DOT         &kp FSLH               &kp RSHFT
-                                                    &kp LEFT_GUI    &mt LS(LA(LC(LG(LGUI)))) RET  &lt 1 TAB    &lt 3 BACKSPACE  &kp SPACE         &kp LEFT_SHIFT
+                                                    &kp LEFT_GUI    &mt LS(LA(LC(LG(LGUI)))) RET  &lt 1 TAB    &lt 2 BACKSPACE  &kp SPACE         &kp LEFT_SHIFT
             >;
         };
 
@@ -99,17 +99,7 @@
 &none  &kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &kp BACKSPACE
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7      &kp N8      &kp N9      &kp N0      &none
 &none  &none         &none         &none         &none         &none         &bootloader   &none       &none       &none       &none       &none
-                                   &none         &none         &none         &none         &none       &none
-            >;
-        };
-
-        arrow_layer {
-            label = "3";
-            bindings = <
-&none  &none           &kp UP_ARROW    &none       &sys_reset  &none    &none           &none     &none         &none      &none  &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &none       &none    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &none
-&none  &none           &none           &none       &none       &none    &none           &none     &none         &none      &none  &none
-                                       &kp ESCAPE  &none       &none    &none           &none     &none
+                                   &none         &none         &none         &to 3         &none       &none
             >;
         };
 
@@ -119,7 +109,17 @@
 &kp ESC  &kp LS(N1)  &kp LS(N2)      &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)      &kp LS(N7)      &kp LS(N8)    &kp LS(N9)  &kp LS(N0)  &none
 &none    &none       &kp LEFT_ARROW  &kp DEL     &kp RIGHT   &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &none       &none
 &none    &none       &none           &none       &none       &none         &none           &none           &none         &none       &none       &none
-                                     &none       &none       &none         &none           &none           &none
+                                     &none       &none       &to 3         &none           &none           &none
+            >;
+        };
+
+        game {
+            label = "gme";
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E       &kp R  &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&kp LGUI   &kp A  &kp S  &kp D       &kp F  &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp C       &kp V  &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp ESCAPE  &none  &to 0    &to 0  &kp SPACE  &none
             >;
         };
     };
