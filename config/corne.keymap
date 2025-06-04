@@ -28,49 +28,9 @@
     combos {
         compatible = "zmk,combos";
 
-        a {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 1>;
-        };
-
-        b {
-            bindings = <&kp CLCK>;
-            key-positions = <14 13>;
-        };
-
-        c {
-            bindings = <&kp TAB>;
-            key-positions = <26 25>;
-        };
-
-        d {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <10 9>;
-        };
-
-        e {
-            bindings = <&kp ENTER>;
-            key-positions = <22 21>;
-        };
-
         f {
-            bindings = <&kp MINUS>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-        };
-
-        g {
-            bindings = <&kp EQUAL>;
-            key-positions = <21 20>;
-        };
-
-        h {
-            bindings = <&sys_reset>;
-            key-positions = <1 29>;
-        };
-
-        j {
-            bindings = <&sys_reset>;
-            key-positions = <30 10>;
         };
     };
 
@@ -88,7 +48,7 @@
         };
 
         number_layer {
-            label = "1";
+            label = "Num";
             bindings = <
 &none  &kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &kp BACKSPACE
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7      &kp N8      &kp N9      &kp N0      &none
@@ -98,7 +58,7 @@
         };
 
         Nav {
-            label = "2";
+            label = "Nav";
             bindings = <
 &kp ESC  &kp LS(N1)  &kp LS(N2)      &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)      &kp LS(N7)      &kp LS(N8)    &kp LS(N9)  &kp LS(N0)  &none
 &none    &none       &kp LEFT_ARROW  &kp DEL     &kp RIGHT   &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &none       &none
@@ -108,7 +68,7 @@
         };
 
         game {
-            label = "gme";
+            label = "Game";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E       &kp R  &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
 &kp LGUI   &kp A  &kp S  &kp D       &kp F  &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
