@@ -69,10 +69,10 @@
         Mainlayer {
             label = "Home";
             bindings = <
-&kp TILDE       &kp Q               &kp W           &kp E           &kp R                             &kp T        &kp Y        &kp U             &kp I           &kp O           &kp P                  &kp C_VOLUME_UP
-&kp ESCAPE      &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F                  &kp G        &kp H        &hm LEFT_SHIFT J  &hm LEFT_GUI K  &hm LEFT_ALT L  &hm LEFT_CONTROL SEMI  &kp C_VOL_DN
-&kp LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp V                             &kp B        &tapnenye    &kp M             &kp COMMA       &kp DOT         &kp FSLH               &kp K_MUTE
-                                                    &kp ESCAPE      &mt LS(LA(LC(LG(LEFT_GUI)))) RET  &lt 1 TAB    &lt 2 SPACE  &kp SPACE         &kp ESCAPE
+&kp C_BRI_UP   &kp Q               &kp W           &kp E           &kp R                             &kp T        &kp Y        &kp U             &kp I           &kp O           &kp P                  &kp C_VOLUME_UP
+&kp ESCAPE     &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F                  &kp G        &kp H        &hm LEFT_SHIFT J  &hm LEFT_GUI K  &hm LEFT_ALT L  &hm LEFT_CONTROL SEMI  &kp C_VOL_DN
+&kp C_BRI_DEC  &kp Z               &kp X           &kp C           &kp V                             &kp B        &tapnenye    &kp M             &kp COMMA       &kp DOT         &kp FSLH               &kp C_MUTE
+                                                   &to 1           &mt LS(LA(LC(LG(LEFT_GUI)))) RET  &lt 1 TAB    &lt 2 SPACE  &kp SPACE         &to 3
             >;
         };
 
@@ -99,10 +99,10 @@
         layer_3 {
             label = "Colemak";
             bindings = <
-&kp TILDE       &kp Q               &kp W           &kp F           &kp P                             &kp B        &kp J        &kp L             &kp O           &kp Y           &enye               &kp DELETE
-&kp ESCAPE      &hm LEFT_CONTROL A  &hm LEFT_ALT R  &hm LEFT_GUI S  &hm LEFT_SHIFT T                  &kp G        &kp M        &hm LEFT_SHIFT N  &hm LEFT_GUI E  &hm LEFT_ALT I  &hm LEFT_CONTROL U  &to 2
-&kp LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp D                             &kp V        &kp K        &kp H             &kp COMMA       &kp DOT         &kp FSLH            &kp RSHFT
-                                                    &kp ESCAPE      &mt LS(LA(LC(LG(LEFT_GUI)))) RET  &lt 1 TAB    &lt 2 SPACE  &kp SPACE         &kp ESCAPE
+&kp C_BRI_UP   &kp Q               &kp W           &kp F           &kp P                             &kp B        &kp J        &kp L             &kp O           &kp Y           &enye               &kp C_VOLUME_UP
+&kp ESCAPE     &hm LEFT_CONTROL A  &hm LEFT_ALT R  &hm LEFT_GUI S  &hm LEFT_SHIFT T                  &kp G        &kp M        &hm LEFT_SHIFT N  &hm LEFT_GUI E  &hm LEFT_ALT I  &hm LEFT_CONTROL U  &kp C_VOL_DN
+&kp C_BRI_DEC  &kp Z               &kp X           &kp C           &kp D                             &kp V        &kp K        &kp H             &kp COMMA       &kp DOT         &kp FSLH            &kp C_MUTE
+                                                   &to 1           &mt LS(LA(LC(LG(LEFT_GUI)))) RET  &lt 1 TAB    &lt 2 SPACE  &kp SPACE         &to 2
             >;
         };
     };
