@@ -96,5 +96,15 @@
                                 &mkp RCLK       &mkp LCLK        &to 0    &none           &none           &none
             >;
         };
+
+        layer_3 {
+            label = "Colemak";
+            bindings = <
+&kp TILDE       &kp Q               &kp W           &kp F           &kp P                             &kp B        &kp J        &kp L             &kp O           &kp Y           &kp SEMI            &kp DELETE
+&tog 1          &hm LEFT_CONTROL A  &hm LEFT_ALT R  &hm LEFT_GUI S  &hm LEFT_SHIFT T                  &kp G        &kp M        &hm LEFT_SHIFT N  &hm LEFT_GUI E  &hm LEFT_ALT I  &hm LEFT_CONTROL U  &tog 2
+&kp LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp D                             &kp V        &kp K        &kp H             &kp COMMA       &kp DOT         &kp FSLH            &kp RSHFT
+                                                    &kp ESCAPE      &mt LS(LA(LC(LG(LEFT_GUI)))) RET  &lt 1 TAB    &lt 2 SPACE  &kp SPACE         &kp ESCAPE
+            >;
+        };
     };
 };
