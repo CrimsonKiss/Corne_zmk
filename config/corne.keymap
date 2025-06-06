@@ -51,7 +51,6 @@
         colemak {
             bindings = <&tog 3>;
             key-positions = <0 11>;
-            layers = <2>;
         };
     };
 
@@ -71,7 +70,7 @@
             label = "Home";
             bindings = <
 &kp TILDE       &kp Q               &kp W           &kp E           &kp R                             &kp T        &kp Y        &kp U             &kp I           &kp O           &kp P                  &kp DELETE
-&tog 1          &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F                  &kp G        &kp H        &hm LEFT_SHIFT J  &hm LEFT_GUI K  &hm LEFT_ALT L  &hm LEFT_CONTROL SEMI  &tog 2
+&to 1           &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F                  &kp G        &kp H        &hm LEFT_SHIFT J  &hm LEFT_GUI K  &hm LEFT_ALT L  &hm LEFT_CONTROL SEMI  &to 2
 &kp LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp V                             &kp B        &tapnenye    &kp M             &kp COMMA       &kp DOT         &kp FSLH               &kp RSHFT
                                                     &kp ESCAPE      &mt LS(LA(LC(LG(LEFT_GUI)))) RET  &lt 1 TAB    &lt 2 SPACE  &kp SPACE         &kp ESCAPE
             >;
@@ -80,18 +79,18 @@
         number_layer {
             label = "Num";
             bindings = <
-&none   &kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &kp BACKSPACE
-&tog 1  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7      &kp N8      &kp N9      &kp N0      &tog 2
-&none   &none         &none         &none         &none         &none         &bootloader   &none       &none       &none       &none       &none
-                                    &none         &none         &none         &to 0         &none       &none
+&none  &kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &kp BACKSPACE
+&to 0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7      &kp N8      &kp N9      &kp N0      &to 2
+&none  &none         &none         &none         &none         &none         &bootloader   &none       &none       &none       &none       &none
+                                   &none         &none         &none         &to 0         &none       &none
             >;
         };
 
-        Nav {
-            label = "Nav";
+        Extend {
+            label = "Extend";
             bindings = <
 &kp ESC  &none  &none           &mmv MOVE_UP    &none            &none    &kp LS(N6)      &kp LS(N7)      &kp LS(N8)    &kp LS(N9)  &kp LS(N0)  &none
-&tog 1   &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &none       &tog 2
+&to 1    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &none       &to 0
 &none    &none  &none           &none           &none            &none    &none           &none           &none         &none       &none       &none
                                 &mkp RCLK       &mkp LCLK        &to 0    &none           &none           &none
             >;
@@ -101,7 +100,7 @@
             label = "Colemak";
             bindings = <
 &kp TILDE       &kp Q               &kp W           &kp F           &kp P                             &kp B        &kp J        &kp L             &kp O           &kp Y           &enye               &kp DELETE
-&tog 1          &hm LEFT_CONTROL A  &hm LEFT_ALT R  &hm LEFT_GUI S  &hm LEFT_SHIFT T                  &kp G        &kp M        &hm LEFT_SHIFT N  &hm LEFT_GUI E  &hm LEFT_ALT I  &hm LEFT_CONTROL U  &tog 2
+&to 1           &hm LEFT_CONTROL A  &hm LEFT_ALT R  &hm LEFT_GUI S  &hm LEFT_SHIFT T                  &kp G        &kp M        &hm LEFT_SHIFT N  &hm LEFT_GUI E  &hm LEFT_ALT I  &hm LEFT_CONTROL U  &to 2
 &kp LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp D                             &kp V        &kp K        &kp H             &kp COMMA       &kp DOT         &kp FSLH            &kp RSHFT
                                                     &kp ESCAPE      &mt LS(LA(LC(LG(LEFT_GUI)))) RET  &lt 1 TAB    &lt 2 SPACE  &kp SPACE         &kp ESCAPE
             >;
