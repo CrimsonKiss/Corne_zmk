@@ -3,7 +3,7 @@
 Adapted to zmk studio. (https://zmk.studio)
 
 
-ZMK Studio provides runtime update functionality to ZMK powered devices, allowing users to change their keymap layers without flashing new firmware to their keyboards.
+[ZMK Studio provides runtime update functionality to ZMK powered devices, allowing users to change their keymap layers without flashing new firmware to their keyboards.
+](https://nickcoutsos.github.io/keymap-editor/)
 
-
-To learn more → https://zmk.dev/docs/features/studio. 
+ZMK Studio Wiki → https://zmk.dev/docs/features/studio. 
